@@ -1,16 +1,16 @@
 <template>
   <hr />
-  <div>
+  <div v-if="data">
     <p>Data:</p>
-    {{ Data }}
+    {{ data }}
   </div>
   <hr />
-  <div>
+  <div v-if="error">
     <p>Error:</p>
     {{ error }}
   </div>
   <hr />
-  <div>
+  <div v-if="error">
     <p>Status :</p>
     <strong>
       {{ error?.statusCode }}
